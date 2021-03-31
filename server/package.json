@@ -1,0 +1,36 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "A simple MERN API",
+    "main": "server.js",
+    "author": "Alpha",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.11.15",
+        "slugify": "^1.4.6"
+    },
+    "devDependencies": {
+        "eslint": "^7.19.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-prettier": "^7.2.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-react": "^7.22.0",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.2.1"
+    },
+    "prettier": {
+        "tabWidth": 4
+    },
+    "engines": {
+        "node": ">=14.13.0"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    }
+}
