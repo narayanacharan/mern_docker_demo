@@ -5,7 +5,7 @@ services:
       restart: always
       build:
          context: ./server
-         dockerfile: Dockerfile.dev
+         dockerfile: Dockerfile
       container_name: library_mern_nginx
       # volumes allow sharing of data in run-time between host and container
       volumes:
@@ -62,7 +62,7 @@ services:
       restart: always
       build:
          context: ./client
-         dockerfile: Dockerfile.dev
+         dockerfile: Dockerfile
       container_name: library_mern_frontend
       volumes:
          - ./app/node_modules
@@ -81,7 +81,7 @@ services:
          - client
       build:
          context: ./nginx
-         dockerfile: Dockerfile.dev
+         dockerfile: Dockerfile
       ports:
          - 8080:80
       networks:
